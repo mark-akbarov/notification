@@ -4,7 +4,7 @@ from .serializer import MessageSerializer
 from .models import Message
 
 
-class NotificationViewSet(ModelViewSet):
+class MessageViewSet(ModelViewSet):
     queryset = Message.objects.all()
     serializer_class = MessageSerializer
     permission_classes = [IsAuthenticated,]
